@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;         
+    /* padding: auto; */
+    /* background-color: black; */
+    background-image: url(images/images.jpg);
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+}
+.play{
+
+    border: 1px solid black;
+    padding: 10px 30px;
+    border-radius: 20px ;
+}
+a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    height: 85vh;
+    /* border:1px solid rgb(5, 5, 5); */
+    background-color:transparent;
+    border-radius: 5px 100px;
+
+}
+.container{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+/* margin-bottom:60px ; */
+/* border:1px solid rgb(5, 5, 5); */
+/* margin-top: -50px; */
+/* margin-bottom: 60px; */
+padding: 20px;
+height: 280px;
+width: 50%;
+
+}
+.containerbtn{
+    display: flex;
+    justify-content: space-around;
+    /* margin-top: -20px; */
+    /* border:1px solid rgb(5, 5, 5); */
+    padding: 20px;
+    /* height: 250px; */
+    width: 75%;
+
+}
+#answer{
+    font-size: 40px;
+    background-color: antiquewhite;
+    height: 40px;
+    width:500px;
+    text-align: center;
+      padding:0px 0 10px 0;
+      border-radius: 10px;
+      visibility: hidden;
+
+}
+#question{
+    font-size: 40px;
+    background-color: antiquewhite;
+    padding:0px 0 10px 0;
+    height: 40px;  
+    width:500px;
+    text-align: center;
+      /* padding: 5px; */
+    border-radius: 10px;
+
+}
+
+#text{
+    font-size: 40px;
+    height: 40px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    background-color: antiquewhite
+}
+
+#btnshow{
+    
+    height: 50px;
+    width:120px;
+    border-radius: 50px 8px 8px 50px  ;
+}
+
+#btncheck{
+    height: 50px;
+    width: 120px;
+    border-radius: 8px;
+}
+
+#btnnext{
+    height: 50px;
+    width: 120px;
+    border-radius: 8px 50px 50px 8px ;
+}
