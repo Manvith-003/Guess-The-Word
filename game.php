@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
-<body>
+<body onload="shuffledWord()">
     <div class="main">
         <div class="box">
             <div class="container">
@@ -16,12 +16,12 @@
                 <input type="text" id="text">
             </div>
             <div class="containerbtn">
-                <button id="btnshow">SHOW</button>
-                <button id="btncheck">CHECK</button>
-                <button id="btnnext">NEXT</button>
+                <button id="btnshow" onclick="show()">SHOW</button>
+                <button id="btncheck" onclick="checkcorrect()">CHECK</button>
+                <button id="btnnext" onclick="shuffledWord()">NEXT</button>
             </div>
         </div>
     </div>
- 
+    <script src="script1.js"></script>
 </body>
 </html>
