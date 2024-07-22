@@ -6,8 +6,6 @@ var answer=document.getElementById("answer");
 var btncheck=document.getElementById("btncheck");
 
 
-
-// Function to shuffle letters of a word
 function shuffleLetters(word) {
 
     // Split the word into an array of characters
@@ -22,7 +20,6 @@ function shuffleLetters(word) {
     // Join the shuffled array back into a string
     let shuffled = letters.join('');
     return shuffled;
-    // Display the shuffled word in the answer element
    
 }
 
@@ -34,8 +31,9 @@ function shuffleLetters(word) {
 //     // Call shuffleLetters function with the input value
 //     shuffleLetters(inputValue);
 // });
-let arr=["manvith","nishitha","thrishala","yashodha","purushothama","dishan","apple", "banana", "orange", "grape", "pineapple"];
 
+let arr=["apple", "banana", "orange", "grape", "pineapple"];
+let point=0;
 let random;
 function shuffledWord(){
     const randomIndex = Math.floor(Math.random() * arr.length);
@@ -46,17 +44,26 @@ function shuffledWord(){
  input.value="";
  btncheck.disabled = false;
  answer.style.visibility='hidden';
-
-
 }
+
+
 function checkcorrect(){
    var ans=input.value;
    if (ans==random){
-    alert('correct'); 
+   
+    // answer.style.visibility='visible';
+    // answer.innerText="correct";
+    alert('correct');
     shuffledWord()
+    point=point+1;
+    // score.innerText="SCORE"+point;
+    document.getElementById("point").innerText="SCORE"+point;
+
    }
    else{
-    alert('incorrect')
+    // alert('incorrect');
+    answer.style.visibility='visible';  
+    answer.innerText="Incorrect";
    }
 }
 

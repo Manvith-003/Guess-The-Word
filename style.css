@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+span{
+    color:white;
+    font-size: 40px ;
+}
 .main{
     width:100%;
     height: 100vh;
@@ -9,8 +13,8 @@
     justify-content: center;
     align-items: center;         
     /* padding: auto; */
-    /* background-color: black; */
-    background-image: url(images/images.jpg);
+    background-color: black;
+    /* background-image: url(images/images.jpg); */
 
     /* Center and scale the image nicely */
     background-position: center;
@@ -39,6 +43,10 @@ a{
     background-color:transparent;
     border-radius: 5px 100px;
 
+}
+.score{
+    background-color: white;
+    padding: 5px;
 }
 .container{
 display: flex;

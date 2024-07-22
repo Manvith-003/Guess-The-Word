@@ -10,6 +10,9 @@
 <body onload="shuffledWord()">
     <div class="main">
         <div class="box">
+        <div class="score">
+            <h3 id="point">SCORE : 0</h3>
+        </div>
             <div class="container">
                 <h3 id="answer"></h3>
                 <h3 id="question"></h3>
