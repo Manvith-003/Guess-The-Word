@@ -100,7 +100,7 @@ width: 50%;
     height: 40px;
     padding: 5px;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 10px;n
     border: none;
     background-color: antiquewhite
 }
@@ -110,16 +110,31 @@ width: 50%;
     height: 50px;
     width:120px;
     border-radius: 50px 8px 8px 50px  ;
+    color:#fff;
+    padding:8px 22px;
+    /* border-radius:6px; */
+    background:#7d2ae8;
+    transition:all 0.2s ease;
 }
 
 #btncheck{
     height: 50px;
     width: 120px;
     border-radius: 8px;
+    color:#fff;
+    padding:8px 22px;
+    /* border-radius:6px; */
+    background:#7d2ae8;
+    transition:all 0.2s ease;
 }
 
 #btnnext{
     height: 50px;
     width: 120px;
     border-radius: 8px 50px 50px 8px ;
+    color:#fff;
+    padding:8px 22px;
+    /* border-radius:6px; */
+    background:#7d2ae8;
+    transition:all 0.2s ease;
 }
