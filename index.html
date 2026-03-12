@@ -3,14 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Guess The Word</title>
+    <!-- Update stylesheet reference -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Meta tags for better aesthetics on mobile -->
+    <meta name="theme-color" content="#0d1117">
 </head>
 <body>
     <div class="main">
-        <!-- <div>knjbh</div> -->
-        <a href="game.html"><span class="play">PLAY</span></a>
-
+        <div class="home-container">
+            <h1 class="title">Word Game<br>Hub</h1>
+            <div class="game-options">
+                <a href="game.html" class="game-card">
+                    <img src="images/scramble_icon.png" alt="Word Scramble">
+                    <div class="game-card-info">
+                        <h3>Word Scramble</h3>
+                        <p>Unscramble the jumbled letters to find the hidden word before time runs out (or endlessly).</p>
+                    </div>
+                </a>
+                <a href="spaceman.html" class="game-card spaceman-card">
+                    <img src="images/spaceman_icon.png" alt="Spaceman">
+                    <div class="game-card-info">
+                        <h3>Spaceman</h3>
+                        <p>Guess the correct letters to complete the word before your spaceship gets destroyed!</p>
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
