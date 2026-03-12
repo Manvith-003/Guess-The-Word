@@ -29,10 +29,16 @@ jobs:
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
+      - name: Prepare static site
+        run: |
+          mkdir _site
+          cp *.html *.css *.js _site/
+          cp -R images _site/images
+
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
 
       - name: Deploy to GitHub Pages
         id: deployment
