@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Cross - Word Game Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="theme-color" content="#0d1117">
+</head>
+
+<body>
+    <div class="main">
+        <div class="game-header">
+            <a href="index.html" class="back-link">← Back</a>
+            <div class="score-badge">
+                <span id="cross-score">SOLVED: 0</span>
+            </div>
+        </div>
+
+        <div class="instructions-box">
+            <h3 style="margin-bottom: 0.5rem; color: var(--text-primary);">How to Play Word Cross</h3>
+            <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                Like a mini crossword puzzle! Words intersect vertically and horizontally. <br>
+                Click an empty tile and use the keyboard to guess the letters and complete all words.
+            </p>
+        </div>
+
+        <!-- Difficulty Modal -->
+        <div id="diffModal" class="modal">
+            <div class="modal-content">
+                <h2>Select Mode</h2>
+                <p>How many words do you want to guess?</p>
+                <div class="difficulty-group modal-diff-group">
+                    <button class="diff-btn" data-diff="easy">Easy</button>
+                    <button class="diff-btn" data-diff="medium">Medium</button>
+                    <button class="diff-btn" data-diff="hard">Hard</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-box cw-box" id="gameBox">
+            <div id="answer-feedback" class="info"></div>
+
+            <div class="cw-grid" id="cwGrid">
+                <!-- Crossword Tiles injected by JS -->
+            </div>
+
+            <div class="keyboard" id="keyboard">
+                <!-- Keyboard buttons will be injected by JS -->
+            </div>
+
+            <div class="btn-group" style="margin-top: 1.5rem;">
+                <button class="btn-primary" id="btncheck">Check Answer</button>
+                <button class="btn-secondary" id="btnnext">Skip Puzzle</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="words.js"></script>
+    <script src="crossword.js"></script>
+</body>
+
+</html>

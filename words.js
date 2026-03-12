@@ -51,3 +51,16 @@ const words = [
     "knowledge", "wisdom", "courage", "honesty", "integrity", "patience",
     "determination", "perseverance", "inspiration", "motivation", "imagination", "creativity"
 ];
+
+// Special pool exclusively for Word Matrix (5-letter words)
+const fiveLetterWords = [
+    "apple", "bread", "camel", "dance", "eagle", "flame", "grape", "heart",
+    "igloo", "jelly", "koala", "lemon", "mango", "night", "ocean", "peach",
+    "queen", "raven", "stone", "tiger", "uncle", "venom", "water", "xenon",
+    "yacht", "zebra", "alien", "brain", "candy", "dream", "earth", "frost",
+    "ghost", "honey", "ivory", "juice", "knife", "light", "magic", "ninja",
+    "onion", "plant", "quiet", "robot", "snake", "train", "urban", "virus",
+    "wheat", "xylol", "youth", "zesty", "space", "power", "music", "smile",
+    "peace", "sound", "color", "world", "house", "mouse", "river", "cloud",
+    "storm", "plane", "train", "truck", "wheel", "watch", "clock"
+];
